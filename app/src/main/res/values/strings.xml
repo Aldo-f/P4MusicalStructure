@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="Search">Search</string>
+    <string name="Home">Home</string>
+    <string name="Likes">Likes</string>
+    <string name="Settings">Settings</string>
+    <string name="User">User</string>
+    <string name="SearchGenres">Search genres</string>
+    <string name="Play">Play music</string>
+
+    <!-- TextView's -->
+    <string name="ViewHome">MainActivity (home/timeline) shows your recommendations (based on your likes (friend likes), what you have listened or some sponsored albums (also based on your likes.</string>
+    <string name="ViewSearch">This starts with an search box. \nBut also shows all the music categories (playlists) in a HorizontalScrollView. \nUnder that you can find all genres (this is also a new intent).</string>
+    <string name="ViewLikes">This shows the likes of the user of the app. This may be categorized by tracks/songs, albums and/or user accounts/artists.</string>
+    <string name="ViewSettings">Here the user of the app can change all settings. \nLike overlapping tracks (and the number of seconds), keep song playing in background, battery saver mode (this triggers multiple setting), only download tracks when connected to wifi, show friends list, ect.</string>
+    <string name="ViewUser">Here you could find some info of the user that posted something. Every user may also upload tracks, these tracks are also displayed here. Maybe also a list of friends (if this is sellected in the settings menu)</string>
+    <string name="ViewSearchGenres">Here you could see all genres. \nLike: \nAlternative rock\nClassic \nCountry \nEDM \nHouse \nDubstep \nIndie</string>
+    <string name="ViewPlay">This activity should be an fragment. So that the content could be openend on every activity. Also this should be a persistence View that does not change when clicking on a new activity that activity does not trigger a new sound. \nThis Activity does play the music (track/album/artist/playlist/mood/genre/...)</string>
+</resources>

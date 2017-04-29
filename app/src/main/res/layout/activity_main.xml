@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aldofieuw.android.p4musicalstructure.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp">
+
+
+        <TextView
+            android:id="@+id/search"
+            style="@style/ChooseActivity"
+            android:text="@string/Search" />
+
+        <TextView
+            android:id="@+id/likes"
+            style="@style/ChooseActivity"
+            android:text="@string/Likes" />
+
+        <TextView
+            android:id="@+id/settings"
+            style="@style/ChooseActivity"
+            android:text="@string/Settings" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:text="@string/ViewHome"
+        style="@style/WhatView"/>
+    <!-- All posts -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Post one -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/user"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@color/colorAccent"
+                        android:src="@drawable/ic_account_box_black_24dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity=""
+                            android:paddingLeft="8dp"
+                            android:text="[insert user] has posted a track" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity=""
+                            android:paddingLeft="8dp"
+                            android:text="[time] ago" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/playTrack"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/image_track"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

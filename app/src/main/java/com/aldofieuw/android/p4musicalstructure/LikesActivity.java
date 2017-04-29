@@ -1,0 +1,13 @@
+package com.aldofieuw.android.p4musicalstructure;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+public class LikesActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_likes);
+    }
+}
